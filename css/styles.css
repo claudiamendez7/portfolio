@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #f5f5f5;
+  --background-color-menu: #ffffff;
+  --link-color: #000000;
+  --text-color: #464646;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--background-color);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+}
+ol,
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 300;
+}
+
+.menu__item a:hover {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.container {
+  padding: 16px 5vw;
+}
+
+/* Header section */
+.header {
+  width: 100%;
+  display: flex;
+  background-color: var(--background-color-menu);
+  box-sizing: border-box;
+}
+.header__logo {
+  max-width: 80px;
+}
+.header__title {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+/* Intro section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60vw;
+}
+.intro__title {
+  font-size: 52px;
+  font-weight: 700;
+}
+.intro__subtitle {
+  font-size: 22px;
+}
+.intro__link {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+
+/* About section */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60vw;
+}
+.about__title {
+  font-size: 52px;
+  font-weight: 700;
+}
+.about__subtitle {
+  font-size: 22px;
+}
+.about-me__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+/* .about-me__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+/* Skills section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  margin-top: 2rem;
+}
+.skills__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.skills__subtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.skills__line {
+  display: flex;
+  justify-content: space-around;
+}
+.skills__box {
+  display: flex;
+  width: 12vw;
+  height: 13vw;
+  background-color: var(--background-color);
+  align-items: end;
+  margin-right: 0.5rem;
+  padding-left: 1rem;
+}
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Hobbies section */
+/* Projects section */
+/* Contact section */
+
+/* Responsive section */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    max-width: 100px;
+  }
+
+  .header__title {
+    font-size: 1.5rem;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .menu__item a {
+    font-size: 1rem;
+  }
+  .about-me {
+    background-color: #eaf2fd;
+  }
+}
+
+/* Bigger screens */
+@media (min-width: 1024px) {
+  /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+  .header__title {
+    font-size: 1.8rem;
+  }
+
+  .menu__item a {
+    font-size: 1.1rem;
+  }
+}
