@@ -21,12 +21,12 @@
         Méndez</span
       >
       <ul class="header__menu">
-        <li class="menu__item"><a href="#about">About</a></li>
-        <li class="menu__item"><a href="#skills">Skills</a></li>
-        <li class="menu__item"><a href="#hobbies">Hobbies</a></li>
-        <li class="menu__item"><a href="#studies">Studies</a></li>
-        <li class="menu__item"><a href="#projects">Projects</a></li>
-        <li class="menu__item"><a href="#contact">Contact</a></li>
+        <li class="menu__list__item"><a href="#about">About</a></li>
+        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+        <li class="menu__list__item"><a href="#studies">Studies</a></li>
+        <li class="menu__list__item"><a href="#projects">Projects</a></li>
+        <li class="menu__list__item"><a href="#contact">Contact</a></li>
       </ul>
     </header>
 
@@ -38,7 +38,8 @@
         </h1>
         <p class="intro__subtitle">
           I am passionate about showcasing my work and skills while currently
-          studying Media and Web Development.
+          studying Media and Web Development. Being apart from Alura Latam and
+          Oracle ONE Project.
         </p>
         <div class="intro__link">
           <a href="#" class="link"
@@ -55,48 +56,41 @@
           /></a>
         </div>
       </article>
-      <div class="intro__img">
-        <img src="img/hero-main.png" alt="profile picture" />
-      </div>
+      <img class="intro__img" src="img/hero-main.png" alt="profile picture" />
     </section>
 
     <!-- About me section -->
-    <section class="about-me container" id="about-me">
-      <article class="about-me__container">
-        <h2 class="about-me__title">About me</h2>
-        <p class="about-me__text">
+    <section class="about container" id="about">
+      <article class="about__container">
+        <h2 class="about__title">About me</h2>
+        <p class="about__text">
           I am a Multimedia and Web Development student at the Servicio Nacional
           de Aprendizaje SENA, passionate about creating engaging and
           user-friendly experiences. I am always eager to learn new technologies
           and expand my skillset.
         </p>
-        <p class="about-me__text">
+        <p class="about__text">
           I am really into creating websites, and I am always looking for new
           challenges and opportunities to improve my skills. I am also a team
           player and I enjoy collaborating with others to achieve common goals.
         </p>
-        <p class="about-me__text">
+        <p class="about__text">
           I am confident that I can make a valuable contribution to any team,
           and I am excited to see what the future holds.
         </p>
-        <p class="about-me__text">
+        <p class="about__text">
           I am currently looking for opportunities to work as a web developer,
           and I am open to any challenges that come my way. I am confident that
           I can make a valuable contribution to any team, and I am excited to
           see what the future holds.
         </p>
-        <p class="about-me__text">
+        <p class="about__text">
           I am a highly motivated and results-oriented individual with a strong
           work ethic. I am also a quick learner and I am always eager to take on
           new challenges. I am confident that I can make a valuable contribution
           to any team, and I am excited to see what the future holds.
         </p>
       </article>
-
-      <!-- optional -->
-      <!-- <div class="about-me__signature">
-        <img src="img/signature.png" alt="Firma" />
-      </div> -->
     </section>
 
     <!-- Skills section -->
@@ -105,17 +99,21 @@
       <div class="skills__line">
         <div class="skills__box">
           <ul>
-            <li class="skills__img">
-              <img class="skills__item__icon" src="img/htlm.png" alt="HTML" />
-              <h3 class="skills__subtitle">HTML</h3>
+            <li class="card__img">
+              <img class="skills__card__icon" src="img/htlm.png" alt="HTML" />
+              <h3 class="skills__subtitle">HTML 5</h3>
             </li>
           </ul>
         </div>
 
         <div class="skills__box">
           <ul>
-            <li class="skills__img">
-              <img src="img/css_icon.png" alt="CSS" />
+            <li class="card__img">
+              <img
+                class="skills__card__icon"
+                src="img/css_icon.png"
+                alt="CSS"
+              />
               <h3 class="skills__subtitle">CSS</h3>
             </li>
           </ul>
@@ -123,8 +121,12 @@
 
         <div class="skills__box">
           <ul>
-            <li class="skills__img">
-              <img src="img/js_icon.png" alt="JavaScript" />
+            <li class="card__img">
+              <img
+                class="skills__card__icon"
+                src="img/js_icon.png"
+                alt="JavaScript"
+              />
               <h3 class="skills__subtitle">JavaScript</h3>
             </li>
           </ul>
@@ -132,8 +134,12 @@
 
         <div class="skills__box">
           <ul>
-            <li class="skills__img">
-              <img src="img/react_icon.png" alt="React" />
+            <li class="card__img">
+              <img
+                class="skills__card__icon"
+                src="img/react_icon.png"
+                alt="React"
+              />
               <h3 class="skills__subtitle">React</h3>
             </li>
           </ul>
@@ -141,7 +147,7 @@
 
         <div class="skills__box">
           <ul>
-            <li class="skills__img">
+            <li class="card__img">
               <img src="img/php_icon.png" alt="PhP" />
               <h3 class="skills__subtitle">PHP</h3>
             </li>
@@ -151,108 +157,232 @@
     </section>
 
     <!-- Hobbies section -->
-    <section class="hobbies" id="hobbies">
+    <section class="hobbies container" id="hobbies">
       <h2 class="hobbies__title">Hobbies</h2>
-      <ul class="hobbies__list">
-        <li class="hobbies__item">
-          <img
-            class="hobbies__icon"
-            src="img/headphones_icon.png"
-            alt="Listening to music"
-          />
-          <p class="hobbies__name">Listening to music</p>
-        </li>
-        <li class="hobbies__item">
-          <img
-            class="hobbies__icon"
-            src="img/tv_icon.png"
-            alt="Watching TV series"
-          />
-          <p class="hobbies__name">Watching tv series</p>
-        </li>
-        <li class="hobbies__item">
-          <img
-            class="hobbies__icon"
-            src="img/camera_icon.png"
-            alt="Taking photos"
-          />
-          <p class="hobbies__name">Taking photos</p>
-        </li>
-      </ul>
+      <div class="hobbies__line">
+        <div class="hobbies__box">
+          <ul>
+            <li class="card__img">
+              <img
+                class="hobbies__card__icon"
+                src="img/headphones_icon.png"
+                alt="Listening to music"
+              />
+              <p class="hobbies__subtitle">Listening to music</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="card__img">
+              <img
+                class="hobbies__card__icon"
+                src="img/tv_icon.png"
+                alt="Watching TV series"
+              />
+              <p class="hobbies__subtitle">Watching tv series</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__item">
+              <img
+                class="hobbies__card__icon"
+                src="img/camera_icon.png"
+                alt="Taking photos"
+              />
+              <p class="hobbies__subtitle">Taking photos</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Studies section -->
-    <section class="studies" id="studies">
-      <h2 class="studies__title">Studies</h2>
-      <ul class="studies__list">
-        <li class="studies__item">
-          <img class="studies__icon" src="img/Logo__sena.PNG" alt="SENA" />
-          <div>
-            <h3 class="studies__name">Multimedia and Web Development</h3>
-            <p class="studies__detail">
-              Present day - Servicio Nacional de Aprendizaje SENA
-            </p>
-          </div>
-        </li>
-        <li class="studies__item">
-          <img class="studies__icon" src="img/alura_logo.png" alt="Alura" />
-          <div>
-            <h3 class="studies__name">UX & UI Design</h3>
-            <p class="studies__detail">2024 - Alura Latam</p>
-          </div>
-        </li>
-        <li class="formacion__elemento">
-          <img
-            class="studies__icon"
-            src="img/google_logo.png"
-            alt="Google certified"
-          />
-          <div>
-            <h3 class="studies__name">Cybersecurity</h3>
-            <p class="studies__detail">Present day - Google and Colnodo</p>
-          </div>
-        </li>
-      </ul>
+    <section class="academic" id="studies">
+      <h2 class="academic__title">Studies</h2>
+      <div class="academic__courses">
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!-- Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img src="img/Logo__sena.PNG" />
+            </li>
+            <li class="academic__courses__item__title">
+              <h4>Multimedia and Web Development Technologist</h4>
+            </li>
+            <li class="academic__courses__item__subtitle">
+              <p>Present day - SENA - Colombia</p>
+            </li>
+          </ul>
+        </div>
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!-- Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img src="img/alura_logo.png" />
+            </li>
+            <li class="academic__courses__item__title">
+              <h4>Front End Specialization</h4>
+            </li>
+            <li class="academic__courses__item__subtitle">
+              <p>Present day - Programa ONE Alura Latam</p>
+            </li>
+          </ul>
+        </div>
+        <div class="academic__courses__box">
+          <ul class="academic__courses__list">
+            <!--Pon el logotipo de la institución de formación -->
+            <li class="academic__courses__item__img">
+              <img src="img/google_logo.png" />
+            </li>
+            <li class="academic__courses__item__title">
+              <h4>Cybersecurity analyst</h4>
+            </li>
+            <li class="academic__courses__item__subtitle">
+              <p>Present day Google Certified and Coursera</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Project section -->
-    <section class="projects" id="projects">
-      <h2 class="projects__title">Professional projects</h2>
-      <div class="projects__container">
-        <h3 class="projects__name">Secret Game</h3>
-        <p class="projects__detail">
-          First challenge made through Alura Latam mentoring and research.
-        </p>
+    <section class="experience container" id="projects">
+      <h2 class="experience__section__title">Professional projects</h2>
+
+      <div class="experience__box">
+        <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+        <img class="experience__img" src="img/Encriptador.png" />
+        <div class="experience__info-container">
+          <h2 class="experience__title">Text Encryptor</h2>
+          <h3 class="experience__text">Oracle Challenge</h3>
+          <div class="experience__description">
+            <!-- Pon el enlace del proyecto en Github o GithubPages -->
+            <span class="experience__repo"
+              ><a href="https://github.com/claudiamendez7/Encriptador.git"
+                ><button class="experience__btn--repo">Repository</button></a
+              ></span
+            >
+            <span class="experience__demo"
+              ><a href="https://claudiamendez7.github.io/Encriptador/"
+                ><button class="experience__btn--demo active">
+                  Watch demo
+                </button></a
+              ></span
+            >
+          </div>
+        </div>
       </div>
-      <div class="projects__container">
-        <h3 class="projects__name">Text Encrypt</h3>
-        <p class="projects__detail">
-          Second challenge for practicing html, css and javascript basic
-          functions.
-        </p>
-      </div>
-      <div class="projects__container">
-        <h3 class="projects__name">AluraPlay</h3>
-        <p class="projects__detail">Practicing CSS and flexbox.</p>
+      <div class="experience__box">
+        <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+        <img class="experience__img" src="img/Secret number game.png" />
+        <div class="experience__info-container">
+          <h2 class="experience__title">Secret number game</h2>
+          <h3 class="experience__text">Oracle selection phase</h3>
+          <div class="experience__description">
+            <!-- Pon el enlace del proyecto en Github o GithubPages -->
+            <span class="experience__repo"
+              ><a
+                href="https://github.com/claudiamendez7/juego-numero-secreto.git"
+                ><button class="experience__btn--repo">Repository</button></a
+              ></span
+            >
+            <span class="experience__demo"
+              ><a href="https://claudiamendez7.github.io/juego-numero-secreto/"
+                ><button class="experience__btn--demo active">
+                  Watch demo
+                </button></a
+              ></span
+            >
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2 class="contacto__title">Contact</h2>
-      <form class="contact__form">
-        <input class="contact__field" type="text" placeholder="Name" />
-        <input
-          class="contact__field"
-          type="email"
-          placeholder="Email address"
-        />
-        <textarea
-          class="contact__field contact__field--textarea"
-          placeholder="Message"
-        ></textarea>
-        <button class="contact__btn" type="submit">Submit</button>
-      </form>
+    <section class="formcontact" id="contact">
+      <div class="formcontact__contact">
+        <div class="formcontact--left">
+          <img class="formcontact__img" src="img/contact_image.png" />
+        </div>
+        <div class="formcontact__text">
+          <h2 class="formcontact__title">Contact</h2>
+          <h3 class="formcontact__subtext">Would you like to contact me?</h3>
+          <h3 class="formcontact__subtext">
+            Fill out the form below and I will get back to you as soon as
+            possible.
+          </h3>
+          <form class="formcontact__form" name="form">
+            <div class="input-container">
+              <input
+                class="formcontact__input"
+                type="text"
+                maxlength="50"
+                name="name"
+                placeholder="Name"
+                required
+                data-tipo="name"
+              />
+              <span class="input-message-error"></span>
+            </div>
+
+            <div class="input-container">
+              <input
+                class="formcontact__input"
+                type="email"
+                maxlength="40"
+                name="email"
+                placeholder="E-mail"
+                required
+                data-tipo="email"
+              />
+              <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+              <input
+                class="formcontact__input"
+                type="text"
+                maxlength="50"
+                name="subject"
+                placeholder="Subject"
+                required
+                data-tipo="subject"
+              />
+              <span class="input-message-error"></span>
+            </div>
+            <div class="input-container">
+              <textarea
+                class="formcontact__textarea"
+                rows="5"
+                cols="40"
+                maxlength="300"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+                data-tipo="message"
+              ></textarea>
+              <span class="input-message-error"></span>
+            </div>
+
+            <button type="submit" class="formcontact__btn">
+              Submit message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="footer__rodape">
+        <p>Desarrollado por clauDev__</p>
+        <p>2024</p>
+      </div>
     </section>
   </body>
   <script src="script.js"></script>
