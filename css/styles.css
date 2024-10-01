@@ -484,11 +484,15 @@ section.formcontact {
     width: 8rem;
     margin-bottom: 1rem;
   }
+  .skills__title {
+    font-size: 1.2rem;
+  }
   .skills__line {
     gap: 1rem;
   }
   .skills__box {
     width: 40%;
+    height: 10vh;
     margin: 0;
     padding: 0.5rem;
   }
@@ -507,8 +511,16 @@ section.formcontact {
   .academic__courses__box {
     width: 100%;
   }
+  .formcontact__text {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
   .formcontact__btn {
     width: 45%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -556,6 +568,11 @@ section.formcontact {
   .hobbies__line {
     justify-content: center;
   }
+  .skills__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
   .skills__line {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -585,13 +602,28 @@ section.formcontact {
   }
 
   .formcontact__contact {
-    padding-top: 0;
+    width: 100vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
   }
   .formcontact--left {
     display: none;
   }
+  .formcontato__title {
+    font-size: 1.3rem;
+  }
   .formcontact__text {
     width: 100%;
+  }
+  .formcontato__subtext {
+    font-size: 1rem;
+  }
+  .formcontact__btn {
+    font-size: 1.2rem;
+  }
+  .experience__section__title {
+    font-size: 1.3rem;
   }
   .experience__box {
     flex-direction: column;
@@ -602,7 +634,7 @@ section.formcontact {
     flex-direction: column;
   }
   .experience__img {
-    width: 100%;
+    width: 90%;
   }
 }
 
