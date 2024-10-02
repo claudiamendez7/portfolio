@@ -101,6 +101,14 @@ a:hover {
   display: flex;
   gap: 2rem;
 }
+.intro__link__btn--downloadCV {
+  all: unset;
+  font-size: 14px;
+  color: var(--link-color);
+}
+.intro__link__btn--downloadCV:hover {
+  color: var(--color-thr);
+}
 .intro_img {
   width: 18rem;
 }
